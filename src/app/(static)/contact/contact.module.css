@@ -1,0 +1,61 @@
+.main{
+    padding: var(--padding-y) 0;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.main form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.main form label{
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.main form input{
+    height: 40px;
+}
+.main form input::placeholder{
+    padding: 0 10px ;
+    text-transform: capitalize;
+}
+.main form textarea{
+    padding: 0 10px;
+    height: 100px;
+    max-width: 100%;
+}
+
+.main form button{
+      padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    width: fit-content;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 10px auto;
+}
+.main form button:hover{
+    background-color: white;
+    color:  rgb(37, 219, 37);
+}
+
+@media (max-width: 600px) {
+    .main{
+        width: 100%;
+    }
+    
+}
