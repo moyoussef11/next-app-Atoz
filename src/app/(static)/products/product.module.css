@@ -83,7 +83,11 @@
     width: 100%;
   }
 }
-
+@media (max-width: 650px) {
+  .sec {
+    padding: var(--padding-y) 0;
+  }
+}
 @media (max-width: 450px) {
   .head {
     flex-direction: column;

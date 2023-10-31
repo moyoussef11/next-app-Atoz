@@ -13,7 +13,7 @@ const products = async () => {
   const products = data.products;
   return (
     <>
-      <div>
+      <div className={Styles.sec}>
         <div className={Styles.head}>
           <h2>products</h2>
         </div>
