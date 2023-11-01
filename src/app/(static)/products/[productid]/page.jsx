@@ -1,6 +1,6 @@
 import Styles from "../product.module.css";
 import PicturePro from "@/app/components/PicturePro/PicturePro";
-
+import Link from "next/link";
 export async function generateMetadata({ params }) {
   const { productid } = params;
   const product = await getData(productid);
@@ -25,6 +25,9 @@ const details = async ({ params }) => {
         <p>{product.description}</p>
         <span>price:${product.price}</span>
         <span>brand:${product.brand}</span>
+        <Link href='/products'>
+          <button className={Styles.btn}>Back to shopping</button>
+        </Link>
       </div>
     </div>
   );

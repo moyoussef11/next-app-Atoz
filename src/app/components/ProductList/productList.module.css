@@ -124,10 +124,10 @@
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
-  -webkit-border-radius: 5p;
-  -moz-border-radius: 5p;
-  -ms-border-radius: 5p;
-  -o-border-radius: 5p;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 .info button:hover {
   background-color: white;
