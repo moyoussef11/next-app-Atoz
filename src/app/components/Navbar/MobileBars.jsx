@@ -8,22 +8,25 @@ const MobileBars = () => {
     const [bars, setBars] = useState(false);
     function toggle() {
         setBars(!bars);
-    }
+  }
+  const handleClick = () => {
+    setBars(false);
+  }
 
   return (
     <>
           <FaBars className={Styles.icon} onClick={toggle} />
           {bars?<ul className={Styles.listPhone}>
-        <Link href="/">
+        <Link href="/" onClick={handleClick} >
           <li>home</li>
         </Link>
-        <Link href="/about">
+        <Link href="/about" onClick={handleClick} >
           <li>about</li>
         </Link>
-        <Link href="/products">
+        <Link href="/products" onClick={handleClick} >
           <li>products</li>
         </Link>
-        <Link href="/contact">
+        <Link href="/contact" onClick={handleClick} >
           <li>contact</li>
         </Link>
       </ul>:""}
